@@ -1,5 +1,4 @@
-import {Container, Box, Heading} from '@chakra-ui/react'
-
+import { Container, Box, Heading } from '@chakra-ui/react';
 
 const Page = () => {
   return (
@@ -7,16 +6,16 @@ const Page = () => {
       <Box borderRadius="lg" bg="red" p={3} mb={5} align="center">
         Hello, I&apos;m a full-stack developer!
       </Box>
-      <Box display={{md: 'flex'}}>
+      <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             HXVRMXNV
           </Heading>
-          <p>Digital creator ( Developer )</p>
+          <p>Digital creator ( Developer Web and Mobile )</p>
         </Box>
       </Box>
     </Container>
-  )
-}
+  );
+};
 
 export default Page;
