@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/midnightxd/my_web_site#readme",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.3",
     "@chakra-ui/react": "^2.2.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
