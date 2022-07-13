@@ -24,7 +24,11 @@ const LinkItem = ({ href, path, children }) => {
 
   return (
     <NextLink href={href}>
-      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>
+      <Link
+        p={2}
+        bg={active ? 'glassTeal' : undefined}
+        color={active ? '#202023' : inactiveColor}
+      >
         {children}
       </Link>
     </NextLink>
@@ -44,7 +48,14 @@ const Navbar = props => {
       zIndex={1}
       {...props}
     >
-      <Container display="flex" p={2} maxW="container.md" wrap="wrap" algn="center" justifyContent="space-between">
+      <Container
+        display="flex"
+        p={2}
+        maxW="container.md"
+        wrap="wrap"
+        algn="center"
+        justifyContent="space-between"
+      >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
@@ -64,12 +75,20 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <Link href="https://github.com/midnightxd" target="_blank">
+            View source
+          </Link>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
-              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
