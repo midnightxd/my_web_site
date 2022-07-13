@@ -4,15 +4,23 @@ import {
   Box,
   Heading,
   Image,
+  SimpleGrid,
   useColorModeValue,
   Button,
+  List,
+  ListItem,
+  Icon,
 } from '@chakra-ui/react';
+
+import { IoLogoInstagram, IoLogoGithub, IoLogoWhatsapp } from 'react-icons/io5';
 
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '../components/bio';
+import { GridItem } from '../components/grid-item';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -33,7 +41,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               HXVRMXNV
             </Heading>
-            <p>Digital creator - Open-Source Enthusiast</p>
+            <p>Digital creator / Open-Source Enthusiast</p>
           </Box>
           <Box
             flexShrink={0}
@@ -99,6 +107,49 @@ const Page = () => {
             I ❤
           </Heading>
           <Paragraph>Music, Robotic, Code, Gaming, Astro</Paragraph>
+        </Section>
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/midnightxd" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @midnightxd
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/japanw7brasil" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @midnightxd
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://api.whatsapp.com/send?phone=5586994068384&text=Contact-me!"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoWhatsapp} />}
+                >
+                  Leonardi Melo
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/works.js"
     ],
-    "/works/vim": [
+    "/works/localmaps": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/works/vim.js"
+      "static/chunks/pages/works/localmaps.js"
     ]
   },
   "ampFirstPages": []

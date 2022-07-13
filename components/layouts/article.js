@@ -26,7 +26,6 @@ const Layout = ({ children, title }) => {
           </Head>
         )}
         {children}
-
         <GridItemStyle />
       </>
     </motion.article>

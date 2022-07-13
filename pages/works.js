@@ -3,11 +3,12 @@ import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 import Layout from '../components/layouts/article';
 
-import Work from './works/vim';
-
 import netflix from '../public/images/works/netflix.png';
 import voidLinux from '../public/images/works/1wm.png';
 import vimSetup from '../public/images/works/vim.png';
+import mplayer from '../public/images/works/mplayer.jpg';
+import opencv from '../public/images/works/face-detection.png';
+import localmaps from '../public/images/works/local-maps.png';
 
 const Works = () => {
   return (
@@ -20,7 +21,7 @@ const Works = () => {
           <Section>
             <WorkGridItem
               id="netflix"
-              title="Netflix-Clone"
+              title="Netflix Clone"
               thumbnail={netflix}
             >
               Clone ui netflix with react
@@ -36,12 +37,28 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section delay={0.3}>
+            <WorkGridItem id="vim" title="My vim settings" thumbnail={vimSetup}>
+              My vim with LSP, version 9.0 suport packages native, otimized for
+              web development.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.4}>
+            <WorkGridItem id="mplayer" title="Music Player" thumbnail={mplayer}>
+              App for music and recomended songs, make only react native.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.5}>
+            <WorkGridItem id="opencv" title="Face Detection" thumbnail={opencv}>
+              Face detection, make with python, OpenCv and Yolo v3.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.6}>
             <WorkGridItem
-              id="vim"
-              title="My setting for vim 9.0"
-              thumbnail={vimSetup}
+              id="localmaps"
+              title="Local Maps"
+              thumbnail={localmaps}
             >
-              My settings for vim 9.0
+              App with version Web and Mobile, for register locale comerce.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

@@ -6,15 +6,14 @@ import Layout from '../../components/layouts/article';
 
 const Work = () => {
   return (
-    <Layout title="Vim">
+    <Layout title="Vim Config">
       <Container>
         <Title>
           Vim <Badge>9.0</Badge>
         </Title>
         <P>
-          My desktop of developement 2021 - 2022, with Desktop Manager i3wm,
-          Operational system Void Linux GLibc, end alacritty terminal gender
-          using GPU.
+          My desktop of developement 2021 - 2022, with Desktop Manager i3wm, and
+          alacritty is a terminal gender using GPU.
         </P>
         <List ml={4} my={4}>
           <ListItem>
