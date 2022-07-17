@@ -1,16 +1,5 @@
 import NextLink from 'next/link';
-import {
-  Container,
-  Box,
-  Heading,
-  Image,
-  SimpleGrid,
-  useColorModeValue,
-  Button,
-  List,
-  ListItem,
-  Icon,
-} from '@chakra-ui/react';
+import { Container, Box, Heading, Image, SimpleGrid, useColorModeValue, Button, List, ListItem, Icon } from '@chakra-ui/react';
 
 import { IoLogoInstagram, IoLogoGithub, IoLogoWhatsapp } from 'react-icons/io5';
 
@@ -26,15 +15,8 @@ const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mt={30}
-          mb={5}
-          align="center"
-        >
-          Hello, I&apos;m a full-stack developer!
+        <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mt={30} mb={5} align="center">
+          Hello, I&apos;m a backend developer!
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -43,12 +25,7 @@ const Page = () => {
             </Heading>
             <p>Digital creator / Open-Source Enthusiast</p>
           </Box>
-          <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            align="center"
-          >
+          <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image
               borderColor="whiteAlpha.800"
               borderWidth={2}
@@ -67,9 +44,8 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello My name is Leonardi, I am a full-stack developer and
-            open-source enthusiast. I like to solve real-life problems using
-            code.
+            Hello My name is Leonardi, I am a backend developer and open-source enthusiast. I like to solve real-life problems
+            using code.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -100,6 +76,10 @@ const Page = () => {
             <BioYear>2022</BioYear>
             Full-stack Web Developer
           </BioSection>
+          <BioSection>
+            <BioYear>2022</BioYear>
+            Deep Learnig
+          </BioSection>
         </Section>
 
         <Section delay={0.3}>
@@ -115,36 +95,21 @@ const Page = () => {
           <List>
             <ListItem>
               <Link href="https://github.com/midnightxd" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoGithub} />}
-                >
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub} />}>
                   @midnightxd
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://instagram.com/japanw7brasil" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoInstagram} />}
-                >
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram} />}>
                   @midnightxd
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link
-                href="https://api.whatsapp.com/send?phone=5586994068384&text=Contact-me!"
-                target="_blank"
-              >
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoWhatsapp} />}
-                >
+              <Link href="https://api.whatsapp.com/send?phone=5586994068384&text=Contact-me!" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoWhatsapp} />}>
                   Leonardi Melo
                 </Button>
               </Link>
