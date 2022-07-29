@@ -35,10 +35,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/works.js"
     ],
-    "/works/mplayer": [
+    "/works/ecomerce": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/works/mplayer.js"
+      "static/chunks/pages/works/ecomerce.js"
     ]
   },
   "ampFirstPages": []
