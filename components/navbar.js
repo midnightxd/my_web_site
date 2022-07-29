@@ -24,11 +24,7 @@ const LinkItem = ({ href, path, children }) => {
 
   return (
     <NextLink href={href}>
-      <Link
-        p={2}
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-      >
+      <Link p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#0a0a0a' : inactiveColor}>
         {children}
       </Link>
     </NextLink>
@@ -43,19 +39,12 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#0a0a0a80')}
       style={{ blackdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
     >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        algn="center"
-        justifyContent="space-between"
-      >
+      <Container display="flex" p={2} maxW="container.md" wrap="wrap" algn="center" justifyContent="space-between">
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
@@ -80,12 +69,7 @@ const Navbar = props => {
           <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
+              <MenuButton as={IconButton} icon={<HamburgerIcon />} variant="outline" aria-label="Options" />
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
